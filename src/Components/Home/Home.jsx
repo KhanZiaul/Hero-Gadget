@@ -4,7 +4,7 @@ import heroImg from '../../assets/hero.jpg'
 const Home = () => {
     return (
         <div>
-            <div className='bg-gray-200 py-40'>
+            <div className='bg-gray-200 py-40 divide-y'>
 
             <h2 className='text-center text-6xl font-bold title-animation'>Welcome To HeroGadget</h2>
             <p className='text-center my-5 '>Best E-commerce platform for buying high quality Smart Home <br />  Appliances at extremely affordable Price.</p>
