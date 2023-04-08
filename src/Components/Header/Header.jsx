@@ -1,12 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
 import { ShoppingCartIcon } from '@heroicons/react/24/solid'
 
 const Header = () => {
     return (
         <div className='flex justify-between items-center px-10 my-7'>
-            <div className='flex justify-center items-center gap-3'>
+            <Link to='/' className='flex justify-center items-center gap-3'>
                 <div className='bg-sky-200 inline-block rounded-full p-3'>
                     <svg
                         xmlns='http://www.w3.org/2000/svg'
@@ -20,7 +20,7 @@ const Header = () => {
                 <h2 className='text-2xl font-bold'>
                     HeroGadget
                 </h2>
-            </div>
+            </Link>
             <div className='flex gap-7'>
                 <NavLink
                     to='/'
