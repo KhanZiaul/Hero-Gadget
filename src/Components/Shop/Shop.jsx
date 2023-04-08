@@ -4,7 +4,7 @@ const Shop = () => {
     const products = useLoaderData()
     console.log(products)
     return (
-        <div>
+        <div className='grid grid-cols-3 gap-10'>
             {
                 products.map(product => <Cards key={product.id} product={product}></Cards>)
             }
@@ -13,12 +13,3 @@ const Shop = () => {
 };
 
 export default Shop;
-
-/*
-category
-id
-index
-name
-picture
-price
-*/
