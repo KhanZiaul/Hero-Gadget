@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 const About = () => {
     return (
         <div className='text-center mt-10 w-[75%] mx-auto'>
@@ -10,15 +11,15 @@ const About = () => {
             <MagnifyingGlassIcon className='w-6 h-6 absolute left-6 md:left-96 bottom-2 '></MagnifyingGlassIcon>
             </div>
             <div className=' grid grid-cols-3'>
-                <p className='p-5 md:p-12 b-r b-b'>Billing</p>
-                <p className='p-5 md:p-12 b-r b-b'>Features</p>
-                <p className='p-5 md:p-12 b-b'>Enterprice</p>
-                <p className='p-5 md:p-12 b-r b-b'>Support</p>
-                <p className='p-5 md:p-12 b-r b-b'>Contact Us</p>
-                <p className='p-5 md:p-12 b-b'>Privacy</p>
-                <p className='p-5 md:p-12 b-r'>Account</p>
-                <p className='p-5 md:p-12 b-r'>My Orders</p>
-                <p className='p-5 md:p-12'>Developers</p>
+                <Link to='/billing' className='p-5 md:p-12 b-r b-b'>Billing</Link>
+                <Link to='features' className='p-5 md:p-12 b-r b-b'>Features</Link>
+                <Link to='/enterprice' className='p-5 md:p-12 b-b'>Enterprice</Link>
+                <Link to='/support' className='p-5 md:p-12 b-r b-b'>Support</Link>
+                <Link to='/contact' className='p-5 md:p-12 b-r b-b'>Contact Us</Link>
+                <Link to='/privacy' className='p-5 md:p-12 b-b'>Privacy</Link>
+                <Link to='/account' className='p-5 md:p-12 b-r'>Account</Link>
+                <Link to='/my_orders' className='p-5 md:p-12 b-r'>My Orders</Link>
+                <Link to='/developers' className='p-5 md:p-12'>Developers</Link>
             </div>
         </div>
     );

@@ -3,8 +3,6 @@ import React, { useContext } from 'react';
 const Cards = ({ product }) => {
     console.log(product)
     const { category,
-        id,
-        index,
         name,
         picture,
         price } = product;

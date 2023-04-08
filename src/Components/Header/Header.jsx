@@ -21,7 +21,7 @@ const Header = () => {
                     HeroGadget
                 </h2>
             </Link>
-            <div className='flex gap-7'>
+            <div className='md:flex gap-7'>
                 <NavLink
                     to='/'
                     className={({ isActive}) =>isActive ? "active font-semibold" : "font-semibold"}
