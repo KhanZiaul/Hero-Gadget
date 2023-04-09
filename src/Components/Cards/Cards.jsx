@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import { handler } from 'daisyui';
+import { Link } from 'react-router-dom';
 
-const Cards = ({ product }) => {
-    console.log(product)
+const Cards = ({ product, addToCart }) => {
     const { category,
+        id,
         name,
         picture,
         price } = product;
@@ -13,7 +14,8 @@ const Cards = ({ product }) => {
             <h2 className='text-2xl font-bold mb-2'>{name}</h2>
             <p className='mb-1'>Category : {category}</p>
             <p className='font-bold mb-1'>Price : {price}$</p>
-            <button className='bg-sky-300 px-28 py-4 block mx-auto rounded-full shadow-lg hover:bg-sky-500'>Add To Cart</button>
+
+            <button onClick={()=> addToCart(id)} className='bg-sky-300 px-28 py-4 block mx-auto rounded-full shadow-lg hover:bg-sky-500'>Add To Cart</button>
         </div>
     );
 };
